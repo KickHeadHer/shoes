@@ -1,0 +1,250 @@
+/* General Styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5f9;
+    /* Light pink background */
+    color: #333;
+    /* Dark text color */
+}
+
+header {
+    background-color: #ff9eb9;
+    /* Soft pink background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+
+/* Title Styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    color: #ff6c8b;
+    /* Light pink text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle text shadow */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6c8b;
+    /* Line color */
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #ff6c6c;
+    /* Lavender purple */
+    animation: neonGlow 1s infinite alternate;
+    /* Neon glow animation */
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff699e;
+    /* Soft blue */
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+
+/* Navigation Styles */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #555;
+    /* Darker color on hover */
+}
+
+
+/* Main Content Styles */
+
+main {
+    padding: 20px;
+}
+
+
+/* Home Section Styles */
+
+#home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    color: #ff6cbf;
+    /* Lavender purple */
+}
+
+#home p {
+    font-size: 1.5em;
+    color: #6993ff;
+    /* Soft blue */
+}
+
+
+/* Product Section Styles */
+
+#products {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.product {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    animation: tilt 0.5s ease infinite alternate;
+    /* Tilt animation on hover */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ff9eb9;
+    /* Soft pink */
+}
+
+.product p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.buy-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #ff9eb9;
+    /* Soft pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #ff6c8b;
+    /* Lighter pink on hover */
+}
+
+
+/* Contact Section Styles */
+
+footer {
+    background-color: #ff9eb9;
+    /* Soft pink */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2em;
+    color: #b66cff;
+    /* Lavender purple */
+}
+
+footer p {
+    font-size: 1.2em;
+    color: #6993ff;
+    /* Soft blue */
+}
+
+
+/* Animations */
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px #b66cff, 0 0 20px #b66cff, 0 0 30px #b66cff, 0 0 40px #b66cff, 0 0 50px #b66cff, 0 0 60px #b66cff, 0 0 70px #b66cff;
+    }
+    100% {
+        text-shadow: 0 0 20px #b66cff, 0 0 30px #b66cff, 0 0 40px #b66cff, 0 0 50px #b66cff, 0 0 60px #b66cff, 0 0 70px #b66cff, 0 0 80px #b66cff;
+    }
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
