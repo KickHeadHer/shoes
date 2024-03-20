@@ -248,3 +248,51 @@ footer p {
         transform: rotate(5deg);
     }
 }
+
+
+/* Add to Cart button styling */
+
+.add-to-cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #ff9eb9;
+    /* Soft pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    /* Add some space between buttons */
+}
+
+.add-to-cart-button:hover {
+    background-color: #ff4d6b;
+    /* Lighter pink on hover */
+}
+
+
+/* Buy Now button styling (keep as it is) */
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #ff9eb9;
+    /* Soft pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #ff6c8b;
+    /* Lighter pink on hover */
+}
